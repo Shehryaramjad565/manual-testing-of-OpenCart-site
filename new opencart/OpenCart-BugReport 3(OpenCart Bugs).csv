@@ -1,0 +1,102 @@
+Bug ID,Description/Summary,Steps to Reproduce,Expected Result,Actual Result,Severity,Priority,Screenshot
+OPENCART-BUG-1,Thank you for registering' email is not received to the registered email address after registering an account,"1. Open the Application URL 
+2. Click on 'My Account' dropmenu
+3. Select 'Register' option
+4. Enter the new User valid details into the 'Register Account' page 
+5. Select the 'Privacy Policy' checkbox option
+6. Click on 'Continue' button 
+",User Account should be created and an email with the subject 'Thank you for registering' should be received by the registered email address.,"User Account is getting created, but the email with subject 'Thank you for registering' is not received to the registered email address.",Major,P1(Medium),
+OPENCART-BUG-2,User is able to register an account by providing an invalid phone number,"1. Open the Application URL
+2. Click on 'My Account' dropmenu
+3. Select 'Register' option
+4. Enter valid details into the fields displayed on the 'Register Account' page
+5. Enter invalid phone number say abcde into the 'Telephone' field
+6. Select 'Privacy Policy' checkbox field
+7. Click on 'Continue' button
+",Warning message should be displayed informing the Users about the invalid phone number,"Warning message is not getting displayed, instead User account is getting created with invalid phone number",Major,P1(Medium),
+OPENCART-BUG-3,Privacy Policy' Checkbox field in 'Register Account' page is not marked with red colour * symbol,"1. Open the Application URL in any browser
+2. Click on 'My Account' Dropmenu 
+3. Select 'Register' option
+4. Check the 'Privacy Policy' checkbox field in the displayed 'Register Account' page
+",Privacy Policy' check box field should be marked with red colour * symbol,Privacy Policy' check box field is mandatory but not marked with red colour * symbol.,Minor,P2(Low),
+OPENCART-BUG-4,Telephone' field in 'Register Account' page is accepting the spaces and not showing warning message,"1. Open the Application URL in any browser
+2. Click on 'My Account' dropmenu
+3. Selection 'Register' option
+4. Enter spaces into all the mandatory fields including 'Telephone' field
+5. Select the 'Privacy Policy' checkbox field
+6. Click on 'Continue' button
+",Warning message informing the User to enter the Telephone field should be displayed,Telephone field is accepting the spaces and no field level warning message is displayed for this field.,Major,P1(Medium),
+OPENCART-BUG-5,Password' and 'Password Confirm' fields in 'Register Account' page are accepting simple passwords,"1. Open the Application URL in any browser
+2. Click on 'My Account' dropmenu
+3. Select 'Register' option
+4. Enter details into all the mandatory fields
+5. Enter simple password say 'abcd' into the 'Password' and 'Password Confirm' fields
+6. Select 'Privacy Policy' checkbox field
+7. Click on 'Continue' button
+",Warning message informing the User to enter a password matching the complexity standards should be displayed,Simple password got accepted and there is no warning message regarding the complexity standards of the Password.,Major,P1(Medium),
+OPENCART-BUG-6,Leading and Trailing spaces are accepted by the text fields in the 'Register Account' page,"1. Open the Application URL in any browser
+2. Click on 'My Account' dropmenu
+3. Select 'Register' option
+4. Enter leading and trailing spaces to the text fields in the 'Register Account' page
+5. Select 'Privacy Policy' checkbox field
+6. Click on 'Continue' button
+",Leading and Trailing spaces should not be accepted by the text fields in the 'Register Account' page,Leading and Trailing spaces are accepted by the text fields in the 'Register Account' page and account is getting created.,Minor,P1(Medium),
+OPENCART-BUG-7,User is getting logged out on clicking Browser back button,"1. Open Application URL in any browser
+2. Click on 'My Account' dropmenu
+3. Select 'Login' option
+4. Enter valid email address into 'E-Mail Address' field and valid password into 'Password' field 
+5. Click on 'Login' button
+6. Click on browser back button two times 
+",User should not get logged out,User is getting logged out,Critical,P1(Medium),
+OPENCART-BUG-8,User is getting logged in automatically on browsing back immediately after logout,"1. Login to the Application
+2. Click on 'My Account' dropmenu
+3. Select 'Logout' option
+4. Click on browser back button 
+",User should not get logged in automatically,User is getting logged in automatically,Major,P1(Medium),
+OPENCART-BUG-9,User is getting logged in automatically on browsing back immediately after logout,"1. Open Application URL in any browser
+2. Click on 'My Account' dropmenu
+3. Select 'Login' option
+4. Enter password into the 'Password' field on the 'Login' page
+5. Click on 'Login' button
+6. Inspect the 'Password' text field 
+",Password should not be visible in the Page Source code ,Password is getting displayed in the Page Source code as shown in the attached screenshot,Major,P1(Medium),
+OPENCART-BUG-10,User is not automatically getting logged out of the Application after 30 minutes of inactivity,"1. Login to the Application with valid credentials
+2. Don't perform any action for next 30 minutes
+3. Try to perform any action after the above 30 minutes like Search a product etc.
+",User should get automatically logged out,User is not getting logged out,Minor,P2(Low),
+OPENCART-BUG-11,"User is not getting logged out in one browser, when logged out in another browser","1. Login to the Application with same credentials in Chrome and Firefox Browser
+2. Logout in Chrome browser
+3. Check performing any action in Firefox browser
+",User should also get logged out in Firefox browser,User is not getting logged out automatically in Firefox browser,Minor,P2(Low),
+OPENCART-BUG-12,Email address is not getting carry forwarded from the 'Login' page to 'Forgot Your Password' page,"1. Open Application URL
+2. Click on 'My Account' dropmenu
+3. Select 'Login' option
+4. Enter email address into the 'E-Mail Address' text field 
+5. Click on 'Forgotten Password' link
+",Email address given in Login page should get carry forwarded to 'Forgot Your Password' page,Email address given in Login page is not getting carry forwarded to 'Forgot Your Password' page,Minor,P1(Medium),
+OPENCART-BUG-13,Using tab keyboard key is not highlighting the 'Search in subcategories' checkbox field,"1. Open Application URL
+2. Click on 'Search' icon without entering any product name
+3. In the displayed 'Search' page, continuously press 'Tab' keyboard key
+",All the options on the 'Search' page should get highlighted/focused.,Search in subcategories' checkbox field is not highlighted or focused.,Minor,P2(Low),
+OPENCART-BUG-14,"Negative, Null and Zero values are accepted by the Qty field in Product Display Pages","1. Open Application URL
+2. Enter any Product Name say 'iMac' into the Search box field 
+3. Click on the button having Search icon
+4. Click the Product displayed in the Search results 
+5. Change the quantity to Negative or Blank or Zero in the Qty field of Product Display Page
+6. Click on 'Add to Cart' button
+",Warning message informing the User to enter a positive quantity into the Qty field should be displayed,Success message with text - Success: You have added Product to your shopping cart! is getting displayed,Minor,P0(High),
+OPENCART-BUG-15,"Warning message informing the User to provide positive quantity is not getting displayed on updating the quantity with negative, zero or blank in the 'Shopping Cart' page","1. Open Application URL
+2. Enter any Product say 'iMac' in the Search box field
+3. Click on 'Search' icon button
+4. Click on 'Add to Cart' button on the product displayed in the Search Results page
+5. Click on 'Shopping Cart' header option
+6. Enter -5 into the Quantity field
+7. Click on 'Update' icon option
+",Warning message informing the User to provide the positive quantity should be displayed,"No warning message is getting displayed, instead 'Your shopping cart is empty!' is getting displayed",Minor,P1(Medium),
+OPENCART-BUG-16,$8 is displayed instead of $5 in the displayed 'Estimate Shipping & Taxes' dialog,"1. Open any Application URL
+2. Navigate to Shopping Cart page after adding a Product to Cart
+3. Click on 'Estimate Shipping & Taxes' dialog
+4. Enter Country say 'United States' into the 'Country' text field
+5. Enter Region/State say 'California' into the 'Region/State' text field
+6. Click on 'Get Quotes' button
+",$5 should be displayed in the 'Estimate Shipping & Taxes' dialog,"For the first time after opening the browser and following the steps to reproduce, $8 is getting displayed in the 'Estimate Shipping & Taxes' dialog",Major,P0(High),

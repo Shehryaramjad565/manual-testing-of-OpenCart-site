@@ -1,0 +1,62 @@
+,,,
+Project Name,OpenCart (Frontend),,
+Client,OpenCart,,
+Reference Document,FRS,,
+Created By,Pavan,,
+Creation Date,DD-MM-YYYY,,
+Approval Date,DD-MM-YYYY,,
+,,,
+,,,
+ Requirement ID,Test Scenario ID,Test Scenario Description,Tes Case ID'S
+1.1,TS_001,Validate the working of Register Account functionality,"TC_RF_001
+TC_RF_002
+TC_RF_003
+TC_RF_004
+TC_RF_005
+TC_RF_006
+TC_RF_007
+TC_RF_008
+TC_RF_009
+TC_RF_010
+TC_RF_011
+TC_RF_012
+TC_RF_013
+TC_RF_014
+TC_RF_015
+TC_RF_016
+TC_RF_017
+TC_RF_018
+TC_RF_019
+TC_RF_020
+TC_RF_021
+TC_RF_022
+TC_RF_023
+TC_RF_024
+TC_RF_025
+TC_RF_026
+TC_RF_027
+"
+1.2,TS_002,Validate the working of Login functionality,"TC_LF_001
+TC_LF_002
+TC_LF_003
+TC_LF_004
+TC_LF_005
+TC_LF_006
+TC_LF_007
+TC_LF_008
+TC_LF_009
+TC_LF_010
+TC_LF_011
+TC_LF_012
+TC_LF_013
+TC_LF_014
+TC_LF_015
+TC_LF_016
+TC_LF_017
+TC_LF_018
+TC_LF_019
+TC_LF_020
+TC_LF_021
+TC_LF_022
+TC_LF_023
+"
